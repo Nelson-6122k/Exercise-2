@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-image: url(survey.jpeg); background-size: cover; font-size: x-large">
+<script>
+    function check1(){
+        let condition = document.getElementById("condition1").value;
+        if(condition == "yes"){
+            ans1="Take an umbrella";
+        }
+        else if(condition == "no"){
+            ans1="Enjoy the sunshine";
+        }
+        else{
+            ans1="Invalid answer";
+        }
+        window.alert(ans1);
+    }
+    function check2(){
+        let condition = document.getElementById("condition2").value;
+        if(condition == "yes"){
+            ans2="Great job!";
+        }
+        else if(condition == "no"){
+            ans2="Finish your homework before playing";
+        }
+        else{
+            ans2="Invalid answer";
+        }
+        window.alert(ans2);
+    }
+    function check3(){
+        let condition = document.getElementById("condition3").value;
+        if(condition == "yes"){
+            ans3="Would you like a cookie?";
+        }
+        else if(condition == "no"){
+            ans3="Time to bake more cookies";
+        }
+        else{
+            ans3="Invalid answer";
+        }
+        window.alert(ans3);
+    }
+    function check4(){
+        let condition = document.getElementById("condition4").value;
+        if(condition == "yes"){
+            ans4="Your teeth are clean";
+        }
+        else if(condition == "no"){
+            ans4="Go brush your teeth now";
+        }
+        else{
+            ans4="Invalid answer";
+        }
+        window.alert(ans4);
+    }
+    function check5(){
+        let condition = document.getElementById("condition5").value;
+        if(condition == "yes"){
+            ans5="Well Happy Birthday!!! Enjoy your day";
+        }
+        else if(condition == "no"){
+            ans5="Fine. Have a nice day";
+        }
+        else{
+            ans5="Invalid answer";
+        }
+        window.alert(ans5);
+    }
+</script>
+
+<center>
+    <div style="border-width:3px; border-style:solid; border-color:#FF0000;">
+    <h1 style="color: #006fff;">SURVEY</h1>
+    <marquee>Survey about the current condition. Questions are (yes/no) type. Feel free to answer.</marquee></div><br>
+    <form>
+        <div>Is it raining outside?<br>
+            <input type=text id="condition1" placeholder="'yes' or 'no'" size="6">
+            <button onclick="check1()">OK</button></div><br>
+        <div>Did you finish your homework?<br>
+            <input type=text id="condition2" placeholder="'yes' or 'no'" size="6">
+            <button onclick="check2()">OK</button></div><br>
+        <div>Are there any cookies left?<br>
+            <input type=text id="condition3" placeholder="'yes' or 'no'" size="6">
+            <button onclick="check3()">OK</button></div><br>
+        <div>Did you brush your teeth?<br>
+            <input type=text id="condition4" placeholder="'yes' or 'no'" size="6">
+            <button onclick="check4()">OK</button></div><br>
+        <div>Is it your birthday today?<br>
+            <input type=text id="condition5" placeholder="'yes' or 'no'" size="6">
+            <button onclick="check5()">OK</button></div>
+    </form>
+</center>
+</body>
+</html>
